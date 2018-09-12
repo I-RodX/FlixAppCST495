@@ -30,26 +30,38 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiY-IT-4qS">
-                                                    <rect key="frame" x="0.0" y="0.0" width="112" height="146"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TiY-IT-4qS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="148"/>
                                                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="116" id="7nd-bX-5Am"/>
+                                                        <constraint firstAttribute="height" constant="148" id="evG-dw-fkg"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPa-g1-Ag3">
-                                                    <rect key="frame" x="120" y="30" width="194" height="107"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPa-g1-Ag3">
+                                                    <rect key="frame" x="122" y="32" width="192" height="105"/>
                                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fight Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SZ-2k-41y">
-                                                    <rect key="frame" x="120" y="0.0" width="194" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Fight Club" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SZ-2k-41y">
+                                                    <rect key="frame" x="122" y="0.0" width="192" height="30"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="VPa-g1-Ag3" firstAttribute="top" secondItem="4SZ-2k-41y" secondAttribute="bottom" constant="8" id="BPU-eD-saZ"/>
+                                                <constraint firstItem="TiY-IT-4qS" firstAttribute="top" secondItem="aOy-Tz-aWT" secondAttribute="top" id="Bcx-7Z-XdV"/>
+                                                <constraint firstItem="VPa-g1-Ag3" firstAttribute="leading" secondItem="TiY-IT-4qS" secondAttribute="trailing" constant="6" id="INg-yq-RF6"/>
+                                                <constraint firstAttribute="trailing" secondItem="4SZ-2k-41y" secondAttribute="trailing" constant="6" id="OV1-Yu-S2d"/>
+                                                <constraint firstItem="4SZ-2k-41y" firstAttribute="leading" secondItem="TiY-IT-4qS" secondAttribute="trailing" constant="6" id="d5O-8y-0mM"/>
+                                                <constraint firstAttribute="trailing" secondItem="VPa-g1-Ag3" secondAttribute="trailing" constant="6" id="eza-rX-YlZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="TiY-IT-4qS" secondAttribute="bottom" id="lOe-Nw-esb"/>
+                                                <constraint firstItem="TiY-IT-4qS" firstAttribute="leading" secondItem="aOy-Tz-aWT" secondAttribute="leading" id="t7S-NZ-Pwf"/>
+                                                <constraint firstItem="VPa-g1-Ag3" firstAttribute="leading" secondItem="TiY-IT-4qS" secondAttribute="trailing" constant="6" id="vUl-ZT-Sxn"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="overviewLabel" destination="VPa-g1-Ag3" id="i5g-ke-MpV"/>

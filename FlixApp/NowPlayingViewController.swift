@@ -18,6 +18,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.rowHeight = 175
 
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector (NowPlayingViewController.didPullToRefresh(_:)), for: .valueChanged)
@@ -33,7 +34,7 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
     }
     
     func fetchMovies(){
-        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=yourkey")!
+        let url = URL(string: "https://api.themoviedb.org/3/movie/now_playing?api_key=a07e22bc18f5cb106bfe4cc1f83ad8ed")!
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         let task = session.dataTask(with: request){ (data, response, error) in
@@ -70,9 +71,9 @@ class NowPlayingViewController: UIViewController, UITableViewDataSource {
         let baseURLString = "https://image.tmdb.org/t/p/w500"
         let posterURL = URL(string: baseURLString + posterPathString)!
         cell.posterImageView.af_setImage(withURL: posterURL)
-        
         return cell
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

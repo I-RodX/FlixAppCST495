@@ -58,7 +58,6 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
                 let movies = dataDictionary["results"] as! [[String: Any]]
                 self.movies = movies
                 self.collectionView.reloadData()
-                //self.refreshControl.endRefreshing()
                 
             }
         }

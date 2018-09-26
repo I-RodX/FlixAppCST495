@@ -119,7 +119,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/YOUC6dB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <br />
+<img src='https://i.imgur.com/YOUC6dB.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /> <br /><br />
 <img src='https://i.imgur.com/kuECXUy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

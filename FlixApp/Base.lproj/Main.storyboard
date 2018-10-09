@@ -210,7 +210,7 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="148" id="9k5-xr-Wqw" customClass="MovieCell" customModule="FlixApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PopularCell" rowHeight="148" id="9k5-xr-Wqw" customClass="PopularCell" customModule="FlixApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="148"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9k5-xr-Wqw" id="Ztq-Rk-dKb">
@@ -253,6 +253,12 @@
                                                 <constraint firstItem="GeJ-MJ-W5s" firstAttribute="leading" secondItem="ujo-Yk-3OQ" secondAttribute="leading" id="koH-Wp-lXf"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="overviewLabel" destination="GeJ-MJ-W5s" id="h16-Oc-qgl"/>
+                                            <outlet property="posterImageView" destination="4aC-wY-Qdh" id="8rx-C2-h1u"/>
+                                            <outlet property="titleLabel" destination="ujo-Yk-3OQ" id="sph-Nl-KvR"/>
+                                            <segue destination="Qef-0X-vkb" kind="show" id="Eob-La-NJS"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -330,6 +336,7 @@
                                         </view>
                                         <connections>
                                             <outlet property="posterImageView" destination="YtZ-cl-jrI" id="ftw-kV-900"/>
+                                            <segue destination="Qef-0X-vkb" kind="show" id="8BR-67-7k3"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -391,4 +398,7 @@
         <image name="superhero_tabbar_item" width="21" height="23"/>
         <image name="ticket_tabbar_icon" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="8BR-67-7k3"/>
+    </inferredMetricsTieBreakers>
 </document>

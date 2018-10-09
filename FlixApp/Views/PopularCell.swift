@@ -1,24 +1,23 @@
 //
-//  MovieCell.swift
+//  PopularCell.swift
 //  FlixApp
 //
-//  Created by Isaac on 9/11/18.
+//  Created by Isaac on 10/8/18.
 //  Copyright © 2018 Isaac. All rights reserved.
 //
 
 import UIKit
 
-class MovieCell: UITableViewCell {
+class PopularCell: UITableViewCell {
 
-    @IBOutlet weak var overviewLabel: UILabel?
-    @IBOutlet weak var titleLabel: UILabel?
-    @IBOutlet weak var posterImageView: UIImageView?
+    @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var posterImageView: UIImageView!
     
     var movie: Movie!{
         didSet {
             titleLabel?.text = movie.title
             overviewLabel?.text = movie.overview
-            
             posterImageView?.af_setImage(withURL: movie.posterUrl!)
         }
     }

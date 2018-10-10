@@ -133,31 +133,35 @@ Messing around with the layout constraaints was tedious and very often confusing
 
 **Flix App** is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] Create a movie model (+2pt)
-- [ ] Implement the movie model (+2pt)
-- [ ] Implement property observers (+2pt)
-- [ ] Create a basic API Client (+2pt)
+- [X] Create a movie model (+2pt)
+- [X] Implement the movie model (+2pt)
+- [X] Implement property observers (+2pt)
+- [X] Create a basic API Client (+2pt)
 
 The following **additional** user stories are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+- [X] added and implemented popular view function and view controller
+- [X] added segue fto detailed view controller for superhero controller and popular view controller 
+
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. classes with swift
+2. debugging depreciated code
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/ZVfV1EN.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' /><br /><br />
+<img src='https://i.imgur.com/aV7OLtn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
